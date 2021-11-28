@@ -1,0 +1,13 @@
+//
+//  SFSEE.xcconfig
+//  SFSEE
+//
+//  Created by Saagar Jha on 11/28/21.
+//
+
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CODE_SIGN_ENTITLEMENTS = $(PRODUCT_NAME)/$(PRODUCT_NAME).entitlements
+ENABLE_APP_SANDBOX = YES
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks
+PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.$(PRODUCT_NAME)
+PRODUCT_NAME = $(TARGET_NAME)
