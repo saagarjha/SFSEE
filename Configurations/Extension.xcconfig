@@ -1,0 +1,14 @@
+//
+//  Extension.xcconfig
+//  SFSEE
+//
+//  Created by Saagar Jha on 11/28/21.
+//
+
+CODE_SIGN_ENTITLEMENTS = $(PRODUCT_NAME)/$(PRODUCT_NAME).entitlements
+INFOPLIST_FILE = $(PRODUCT_NAME)/Info.plist
+INFOPLIST_KEY_CFBundleDisplayName = $(PRODUCT_NAME)
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks
+PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.SFSEE.$(PRODUCT_NAME)
+PRODUCT_NAME = $(TARGET_NAME)
+SKIP_INSTALL = YES
